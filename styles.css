@@ -142,7 +142,7 @@ header {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 997;
+  z-index: 999;
 }
 .navbar {
   background-color: transparent !important;
@@ -168,7 +168,8 @@ header {
 .logo {
   font-weight: bold;
   color: white;
-  margin-left: 20px;
+  
+  height: 80px;
 }
 
 .nav {
@@ -1526,3 +1527,63 @@ font: 400 18px 'Inter', sans-serif;
       align-items: center;
       justify-content: center;
     }
+    /*side bar*/
+
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100vh;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      z-index: 999;
+    }
+    
+    .sidebar-nav {
+      margin-top: 30px;
+      list-style: none;
+      padding: 0;
+    }
+    
+    .sidebar-nav li {
+      margin-bottom: 15px;
+    }
+    
+    .sidebar-nav a {
+      display: flex;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-size: 14px;
+      text-align: center;
+
+   
+    }
+    .sidebar-nav a span{
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sidebar-nav a:hover {
+      background-color: yellow;
+      color: black;
+    }
+    
+    .sidebar-nav a i {
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .content {
+      margin-left: 200px;
+      padding: 20px;
+    }
+    
