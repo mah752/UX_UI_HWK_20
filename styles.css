@@ -1567,10 +1567,14 @@ font: 400 18px 'Inter', sans-serif;
     .sidebar-nav a span{
       color: white;
       display: flex;
-      align-items: center;
+      align-items: start;
       justify-content: center;
     }
     .sidebar-nav a:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .sidebar-nav a span:hover {
       background-color: yellow;
       color: black;
     }
