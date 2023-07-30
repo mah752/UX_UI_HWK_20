@@ -165,11 +165,12 @@ header {
   text-decoration: underline;
 }
 
-.logo {
+.navbar-brand {
   font-weight: bold;
-  color: white;
-  
-  height: 80px;
+  color: white !important;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
 }
 
 .nav {
@@ -203,6 +204,9 @@ i{
 
 .navbar-brand {
   color: white;
+}
+.navbar .nav-link {
+  color: white !important;
 }
 
 .hero {
@@ -1529,63 +1533,60 @@ font: 400 18px 'Inter', sans-serif;
     }
     /*side bar*/
 
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Increase the width to provide more space for content */
+  height: 100vh;
+  background-color: #111; /* Use a darker background color */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left side */
+  justify-content: flex-start;
+  z-index: 999;
+}
 
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 200px;
-      height: 100vh;
-      background-color: black;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      z-index: 999;
-    }
-    
-    .sidebar-nav {
-      margin-top: 30px;
-      list-style: none;
-      padding: 0;
-    }
-    
-    .sidebar-nav li {
-      margin-bottom: 15px;
-    }
-    
-    .sidebar-nav a {
-      display: flex;
-      color: white;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      font-size: 14px;
-      text-align: center;
+/* Sidebar navigation list */
+.sidebar-nav {
+  margin-top: 30px;
+  list-style: none;
+  padding: 0;
+}
 
-   
-    }
-    .sidebar-nav a span{
-      color: white;
-      display: flex;
-      align-items: start;
-      justify-content: center;
-    }
-    .sidebar-nav a:hover {
-      background-color: yellow;
-      color: black;
-    }
-    .sidebar-nav a span:hover {
-      background-color: yellow;
-      color: black;
-    }
-    
-    .sidebar-nav a i {
-      margin-right: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
+/* Sidebar list items */
+.sidebar-nav li {
+  margin-bottom: 15px;
+}
+
+/* Sidebar link styles */
+.sidebar-nav a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Slightly increase the font size for better readability */
+  padding: 10px 20px; /* Add some padding to make it visually appealing */
+  border-radius: 5px; /* Add border radius for a more modern look */
+}
+
+/* Sidebar link icon styles */
+.sidebar-nav a i {
+  margin-right: 10px;
+}
+
+/* Sidebar link hover styles */
+.sidebar-nav a:hover {
+  background-color: #FFC700; /* Use a bright color for better contrast on hover */
+  color: black;
+}
+
+/* Sidebar link span hover styles */
+.sidebar-nav a span:hover {
+  background-color: #FFC700; /* Use the same hover color for span elements */
+  color: black;
+}
     .content {
       margin-left: 200px;
       padding: 20px;
