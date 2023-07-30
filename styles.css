@@ -1538,7 +1538,7 @@ font: 400 18px 'Inter', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
-  width: 250px; /* Increase the width to provide more space for content */
+  width: 200px; /* Increase the width to provide more space for content */
   height: 100vh;
   background-color: #111; /* Use a darker background color */
   display: flex;
@@ -1558,12 +1558,13 @@ font: 400 18px 'Inter', sans-serif;
 /* Sidebar list items */
 .sidebar-nav li {
   margin-bottom: 15px;
+
 }
 
 /* Sidebar link styles */
 .sidebar-nav a {
   display: flex;
-  color: white;
+  color: white !important;
   text-decoration: none;
   transition: background-color 0.3s ease;
   font-size: 16px; /* Slightly increase the font size for better readability */
